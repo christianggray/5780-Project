@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/Users/monthonpaul/esp/temp_sensor/build/CMakeFiles/bootloader
+/Users/monthonpaul/esp/temp_sensor/build/CMakeFiles/bootloader.rule
+/Users/monthonpaul/esp/temp_sensor/build/CMakeFiles/bootloader-complete.rule
+/Users/monthonpaul/esp/temp_sensor/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/Users/monthonpaul/esp/temp_sensor/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/Users/monthonpaul/esp/temp_sensor/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/Users/monthonpaul/esp/temp_sensor/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/Users/monthonpaul/esp/temp_sensor/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/Users/monthonpaul/esp/temp_sensor/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/Users/monthonpaul/esp/temp_sensor/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
