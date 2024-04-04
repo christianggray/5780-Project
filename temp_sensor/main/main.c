@@ -7,8 +7,8 @@ void app_main(void)
     //ESP_ERROR_CHECK(nvs_flash_init());
     i2c_config_t i2c_cfg = {
         .mode = I2C_MODE_MASTER,
-        .sda_io_num = GPIO_NUM_5,
-        .scl_io_num = GPIO_NUM_6,
+        .sda_io_num = GPIO_NUM_11,
+        .scl_io_num = GPIO_NUM_12,
         .sda_pullup_en = false,
         .scl_pullup_en = false,
 
