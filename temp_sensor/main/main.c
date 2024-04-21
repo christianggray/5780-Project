@@ -65,10 +65,10 @@ void app_main(void) {
         .master = {
             .clk_speed = 100000}};
 
-    ESP_ERROR_CHECK(i2c_param_config(I2C_NUM_0, &i2c_cfg));
-    ESP_ERROR_CHECK(i2c_driver_install(I2C_NUM_0, I2C_MODE_MASTER, 0, 0, 0));
+    ESP_ERROR_CHECK(i2c_param_config(I2C_NUM_1, &i2c_cfg));
+    ESP_ERROR_CHECK(i2c_driver_install(I2C_NUM_1, I2C_MODE_MASTER, 0, 0, 0));
 
-    bmx280_t* bmx280 = bmx280_create(I2C_NUM_0);
+    bmx280_t* bmx280 = bmx280_create(I2C_NUM_1);
 
     if (!bmx280) {
         ESP_LOGE("test", "Could not create bmx280 driver.");
