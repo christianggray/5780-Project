@@ -123,26 +123,29 @@ void temp_sens(lv_disp_t *disp) {
             hum = DHT11_read().humidity;
             ESP_LOGI(TAG, "Read Values: temp = %.2f, pres = %.2f, hum = %.2f", temp, pres, hum);
             ESP_LOGI(TAG, "Status code is %d", DHT11_read().status);
-            /* if (i % 3 == 1)
+            if (i % 3 == 1)
                 sprintf(dis, "%.2f", pres);
             else if (i % 3 == 2)
                 sprintf(dis, "%.0f", hum);
             else
                 sprintf(dis, "%.0f", temp);
-            example_lvgl_demo_ui(disp, dis, i++ % 3); */
+            example_lvgl_demo_ui(disp, dis, i++ % 3);
             // vTaskDelay(10000 / portTICK_PERIOD_MS);
-            vTaskDelay(pdMS_TO_TICKS(5000));
-            ESP_LOGI(TAG, "asdf%c", *dtmp);
-            if (*dtmp == 'a') {
+            vTaskDelay(pdMS_TO_TICKS(2000));
+            if (*dtmp == 'p') {
                 sprintf(dis, "%.2f", pres);
                 example_lvgl_demo_ui(disp, dis, 1);
-            } else if (*dtmp == 'b') {
+                i = 4;
+            } else if (*dtmp == 'h') {
                 sprintf(dis, "%.0f", hum);
                 example_lvgl_demo_ui(disp, dis, 2);
-            } else if (*dtmp == 'c') {
+                i = 5;
+            } else if (*dtmp == 't') {
                 sprintf(dis, "%.0f", temp);
                 example_lvgl_demo_ui(disp, dis, 0);
+                i = 3;
             }
+            *dtmp = 'z';
 
             // Release the mutex
             lvgl_port_unlock();
